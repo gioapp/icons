@@ -3,8 +3,8 @@ package controller
 import (
 	"gioui.org/layout"
 	"gioui.org/widget"
-	"github.com/p9c/learngio/examples/icons/ico"
-	"github.com/p9c/learngio/examples/icons/model"
+	"github.com/gioapp/icons/ico"
+	"github.com/gioapp/icons/model"
 )
 
 func Colors() model.Colors {
@@ -23,7 +23,7 @@ func Colors() model.Colors {
 func NewScreen() *model.Screen {
 	return &model.Screen{
 		TextSize:    8.0,
-		IconSize:    32,
+		IconSize:    16,
 		BgColor:     "ffcfcfcf",
 		AccentColor: "ff303030",
 		GroupsIco:   ico.NewIco().GroupsIco(),

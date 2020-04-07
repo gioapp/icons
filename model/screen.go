@@ -3,7 +3,7 @@ package model
 import (
 	"gioui.org/layout"
 	"gioui.org/widget"
-	"github.com/p9c/learngio/examples/icons/ico"
+	"github.com/gioapp/icons/ico"
 )
 
 type Screen struct {

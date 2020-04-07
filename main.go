@@ -11,8 +11,8 @@ import (
 	"gioui.org/unit"
 	"gioui.org/widget"
 	"gioui.org/widget/material"
-	"github.com/p9c/learngio/examples/icons/controller"
-	"github.com/p9c/learngio/examples/icons/model"
+	"github.com/gioapp/icons/controller"
+	"github.com/gioapp/icons/model"
 	"github.com/p9c/learngio/helpers"
 	"image"
 	"image/color"
@@ -82,7 +82,7 @@ func main() {
 						}
 						sort.Strings(icoS)
 						scr.List.Layout(gtx, len(scr.IcoBank[scr.NavButtonsGroup.Value(gtx)]), func(i int) {
-							layout.UniformInset(unit.Dp(16)).Layout(gtx, renderIcon(gtx, th, scr.IcoBank[scr.NavButtonsGroup.Value(gtx)][icoS[i]], scr, icoS[i]))
+							layout.UniformInset(unit.Dp(8)).Layout(gtx, renderIcon(gtx, th, scr.IcoBank[scr.NavButtonsGroup.Value(gtx)][icoS[i]], scr, icoS[i]))
 						})
 					}))
 				e.Frame(gtx.Ops)
@@ -108,7 +108,7 @@ func renderIcon(gtx *layout.Context, th *material.Theme, icon *material.Icon, sc
 						icon.Layout(gtx, unit.Dp(float32(scr.IconSize)))
 					}),
 					layout.Rigid(func() {
-						th.Label(th.TextSize.Scale(14.0/float32(scr.TextSize)), iconLabel).Layout(gtx)
+						th.Label(th.TextSize.Scale(8.0/float32(scr.TextSize)), iconLabel).Layout(gtx)
 					}),
 				)
 			}),
