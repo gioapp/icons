@@ -1,10 +1,8 @@
 module github.com/gioapp/icons
 
-go 1.14
+go 1.15
 
 require (
-	gioui.org v0.0.0-20200313163306-5180bb0e1a50
-	github.com/p9c/learngio v0.0.0-20200312175744-5c62ae92f2fb
-	github.com/p9c/learngio/examples/icons v0.0.0-20200312175744-5c62ae92f2fb
-	golang.org/x/exp v0.0.0-20200228211341-fcea875c7e85
+	gioui.org v0.0.0-20200820122550-d3fffef86188
+	golang.org/x/exp v0.0.0-20200821190819-94841d0725da
 )

@@ -16,22 +16,22 @@ type Screen struct {
 	NavList           *layout.List
 	List              *layout.List
 	NavButtonsGroup   *widget.Enum
-	BgColorLight      *widget.Button
-	BgColorYellow     *widget.Button
-	BgColorPurple     *widget.Button
-	BgColorRed        *widget.Button
-	BgColorBlue       *widget.Button
-	BgColorDark       *widget.Button
-	BgColorOrange     *widget.Button
-	BgColorGreen      *widget.Button
-	AccentColorLight  *widget.Button
-	AccentColorYellow *widget.Button
-	AccentColorPurple *widget.Button
-	AccentColorRed    *widget.Button
-	AccentColorBlue   *widget.Button
-	AccentColorDark   *widget.Button
-	AccentColorOrange *widget.Button
-	AccentColorGreen  *widget.Button
+	BgColorLight      *widget.Clickable
+	BgColorYellow     *widget.Clickable
+	BgColorPurple     *widget.Clickable
+	BgColorRed        *widget.Clickable
+	BgColorBlue       *widget.Clickable
+	BgColorDark       *widget.Clickable
+	BgColorOrange     *widget.Clickable
+	BgColorGreen      *widget.Clickable
+	AccentColorLight  *widget.Clickable
+	AccentColorYellow *widget.Clickable
+	AccentColorPurple *widget.Clickable
+	AccentColorRed    *widget.Clickable
+	AccentColorBlue   *widget.Clickable
+	AccentColorDark   *widget.Clickable
+	AccentColorOrange *widget.Clickable
+	AccentColorGreen  *widget.Clickable
 	Colors            Colors
 }
 type Colors map[string]string
